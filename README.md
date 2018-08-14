@@ -8,4 +8,4 @@ The application is connected to MySQL via the pdo_mysql php extension. This exte
 
 I also use the VSCode extension [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) which launches a development local server with live reload. Use the alt+L, alt+O shortcuts to start up the local server.
 
-To run this application, start the php CLI SAPI server using the windows command prompt to cd into the directory where the index.php is located. Then use this command: php -S localhost:8000. 
+To run this application use the windows command prompt to cd into the directory where the index.php is located. Then use this command to start the php CLI SAPI server : php -S localhost:8000. 
