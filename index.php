@@ -13,18 +13,23 @@
 <body>
     <div class="container">
             <div class="row">
-                <h3>PHP CRUD Grid</h3>
+                <h3>PHP CRUD</h3>
             </div>
             <?php 
-                echo phpinfo();
+                // echo phpinfo();
             ?>
             <div class="row">
+                <p>
+                    <a href="create.php" class="btn btn-success">Create</a>
+                </p>
+
                 <table class="table table-striped table-bordered">
                   <thead>
                     <tr>
                       <th>Name</th>
                       <th>Email Address</th>
                       <th>Mobile Number</th>
+                      <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -37,6 +42,7 @@
                             echo '<td>'. $row['name'] . '</td>';
                             echo '<td>'. $row['email'] . '</td>';
                             echo '<td>'. $row['mobile'] . '</td>';
+                            echo '<td><a class = "btn" href = "read.php?id='.$row['id'].'">Read</a></td>';
                             echo '</tr>';
                    }
                    Database::disconnect();
